@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Tooltip, Button } from "@material-tailwind/react";
 import { addToCart } from "../../features/slices/cartSlice";
 import { useDispatch } from "react-redux";
+import Navbar from "../Navbar/Navbar";
 
 const SingleProduct = () => {
   const product = useSelector((state) => state.products.singleProduct);
@@ -17,6 +18,7 @@ const SingleProduct = () => {
 
   return (
     <div>
+      <Navbar></Navbar>
       {product
         .filter((product) => product.id === id)
         .map((item, index) => {

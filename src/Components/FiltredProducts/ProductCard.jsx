@@ -9,6 +9,7 @@ import {
 import { useDispatch } from "react-redux";
 import { singleProduct } from "../../features/slices/productsSlice";
 import { Link, useParams } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const ProductCard = ({ id, name, text, img, price, colors }) => {
   const dispatch = useDispatch();

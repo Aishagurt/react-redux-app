@@ -18,14 +18,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-black p-4 w-full flex justify-center items-center ">
-        <p className="text-white font-inter text-2xl font-bold  ">
-          Redux Toolkit Time
-        </p>
-      </div>
       <div className="flex justify-around items-center">
         <div>
-          <img className="h-28 w-full" src={logo} alt="store"></img>
+          <a href="/">
+            <img className="h-28 w-full" src={logo} alt="store" />
+          </a>
         </div>
         <div className="flex flex-row items-center">
           <div className="flex flex-row items-center">
@@ -104,7 +101,7 @@ const Navbar = () => {
           Free shipping and returns
         </p>
         <p className="text-white font-inter text-base font-medium ">
-          Diffrent payment methods
+          Different payment methods
         </p>
       </div>
     </>

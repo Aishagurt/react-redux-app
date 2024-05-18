@@ -17,6 +17,7 @@ import {
   filterByColor,
   filterBySize,
 } from "../../features/slices/productsSlice";
+import Navbar from "../Navbar/Navbar";
 
 const FilteredProducts = () => {
   const products = useSelector((state) => state.products.filteredProducts);
@@ -38,6 +39,7 @@ const FilteredProducts = () => {
 
   return (
     <div className="">
+      <Navbar></Navbar>
       <div className="pt-16">
         <div className="pl-14">
           <h1 className="text-gray-600 text-4xl font-inter font-bold tracking-normal leading-none">
